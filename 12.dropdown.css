@@ -1,0 +1,44 @@
+ul{
+    background-color: black;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+li{
+float: left;
+}
+li a, .dropbtn{
+    display: inline-block;
+    color: rgb(228, 64, 190);
+    padding: 14px 26px;
+    text-decoration: none;
+}
+li a:hover, .dropdown:hover .dropbtn{
+    /*quando o dropdown wativwe hover, o dropbtn fica permanentemente vermelho*/
+    background-color: red;
+}
+li.dropdown{
+    display: inline-block;
+}
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background: white;
+    width: 150px;
+    border:1px double lightblue;
+}
+.dropdown-content a{
+display: block;
+}
+.dropdown:hover .dropdown-content{
+     display: block;
+}
+.dropdown-content a:hover{
+color: white;
+text-align: center;
+}
+/* 
+h1.red{especifica que o elemento tal, de classe tal, vai ter propriedades tal} 
+se vc usar varios seleores iguais, o ultimo vai ser obedecido.
+*/

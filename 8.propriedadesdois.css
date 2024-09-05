@@ -1,0 +1,63 @@
+h1, h3{
+    text-align: center;
+    margin-top: 0;
+}
+body{
+    text-align: justify;
+}
+.container{
+
+    box-sizing: border-box;
+    display: inline-block;
+    width: 100%;
+    height: 40%;
+    background-color: coral;
+    position: relative;
+}
+.container > div{
+    display: inline-block;
+    width: 32.6%;
+    
+}
+#um{
+    position: relative;
+    left: 10px;
+    background-color: brown;
+}
+#dois{
+background-color: blue;
+}
+#tres{
+    background-color: darkcyan;
+}
+.fixed{
+    background-color: blueviolet;
+    width: 20%;
+    position: fixed;
+    top:0;
+    right: 0;
+    font-size: 10px;
+}
+.absolute{
+    text-align: center;
+    background-color: blueviolet;
+    position: absolute;
+    right: 0;
+    top:25%;
+}
+.pai-stick{
+    width: 100%;
+    height: 400px;
+    background-color: blue;
+    position: relative;
+    display: inline-block;
+}
+.stick{
+    position: sticky;
+    top: 0;
+    display:inline-block;
+    background-color: rgb(172, 113, 113);
+    color: rgb(18, 17, 19);
+    width: 20%;
+    
+}

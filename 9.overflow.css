@@ -1,0 +1,10 @@
+.exemplo{
+    background: blueviolet;
+    color: antiquewhite;
+    height: 100px;
+    overflow: scroll /*hidden, visibility, auto*/;
+}
+body{
+    overflow-y: hidden;
+    overflow-x: hidden;
+}

@@ -1,0 +1,29 @@
+body{
+    background-color: rgb(236, 229, 168);
+}
+h1{
+    text-align: center;
+}
+#block{
+    border: 1px solid blue;
+}
+#inline{
+    border: groove 1px brown;
+    display: inline;
+}
+#none:hover{
+display: none;
+}
+/*No CSS, o sinal de "maior que" (>) é um combinador filho. Ele é usado para selecionar elementos que são filhos diretos de um determinado elemento pai.*/
+.exemplo-inline-block > div{
+    display: inline-block;
+    color: blueviolet;
+    background-color: darkred;
+    width: 28%;
+    min-height: 20px;
+    text-align: center;
+    padding: 20px;
+}
+#exemplo-hidden{
+    visibility: hidden;
+}

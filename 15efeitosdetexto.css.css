@@ -1,0 +1,21 @@
+.card{
+    background-color: rgb(255, 255, 255);
+    width: 40%;
+    height:auto;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2), 0 6px 20px rgba(0,0,0,0.19);
+}
+h1{
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+h1,.reduzido{
+    margin-bottom: 0;
+    white-space: nowrap; /*texto todo em uma linha*/
+    overflow: hidden;
+    text-overflow:ellipsis ;
+    padding-bottom: 30px;
+    /*comportamrnto do texto quando não cabe*/
+}
+.card:hover .reduzido,h1{
+white-space: normal;
+}

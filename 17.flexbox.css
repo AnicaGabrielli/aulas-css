@@ -1,0 +1,21 @@
+.flexbox-pai{
+background-color: darkred;
+display: flex;  /* display flexivel */
+flex-direction: row ; /* direção dos elementos; podem ser em colunas ou linhas. o padrão fle é row*/
+flex-wrap: wrap ; /*comportamento dos elementos a depender do tamanho da div pai; shothand do flex-direction e flex-wrap (flex-flow: row wrap)*/
+justify-content: space-evenly; /*alinhamento horizontal*/
+align-items: flex-start; /*alinhamento horizontal*/
+
+}
+@media screen and (max-width: 600px){
+    .flexbox-pai{
+        flex-direction: column-reverse;
+    }
+}
+.flexbox-pai div{
+    background-color: gold;
+    border: darkorange double 5px;
+    margin: 20px;
+    padding: 30px;
+    text-align: center;
+}

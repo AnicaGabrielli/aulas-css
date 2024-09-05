@@ -1,0 +1,33 @@
+body{
+    padding-bottom: 500px;
+}
+.container{
+    display:flex; /*deixa em linha por padrão*/
+    background-color: blueviolet;
+    border: 2px solid maroon;
+    padding: 15px;
+    max-width: 300px;
+    height: 300px;
+    justify-content: center;/*ajusta o alinhamento na hrizontal*; space-around, space-between*/
+    align-items:center ; /*alinhamento na horizontal;*/ 
+    flex-direction: column;/*alinha rm coluna ou linha*/
+    flex-wrap: wrap;/*quando os elementos chegarem na quentidade limite, quebra linha*/
+}
+.item{
+    background-color: coral;
+    border: 2px solid gold;
+    height: 50px;
+    width: 50px;
+}
+.box{
+    background-color: coral;
+    border: 2px solid gold;
+    height: 50px;
+    flex-basis: 30px;
+}
+#item-1{
+flex-grow: 2;
+}
+#item-2, #item-3{
+    flex-grow: 1;
+}

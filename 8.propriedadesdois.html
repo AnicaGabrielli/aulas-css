@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="8.propriedadesdois.css">
+    <title>Propriedades - P2</title>
+</head>
+<body>
+    <h1>Propriedades - P2</h1>
+    <div class="pai-stick">
+        <div class="stick">
+            Aqui temos uma div com position stick que fica parado e depois some.
+        </div>
+       </div>
+    <ul>
+        <li>
+            max-widht: define a largura máxima; Não tem barra de rolagem auxiliando a responsividade.
+        </li>
+        <br><br>
+        <li>
+            position: diz respeito como o elemento vai se comportar no fluxo da tela. Existem 5 valores para essa propriedade: static, relative, fixed, absolute e sticky. O position padrão é static. 
+            <br><br>
+            <div class="container">
+                <h3>relative</h3>
+                <p>Comportamento: Um elemento com position: relative é posicionado em relação à sua posição original no fluxo normal do documento.
+                Deslocamento: As propriedades top, right, bottom e left movem o elemento em relação à sua posição inicial. O espaço original ocupado pelo elemento permanece no layout.
+                Uso comum: É útil quando você deseja ajustar levemente a posição de um elemento sem alterar o layout dos outros elementos ao redo. Para decidir se fica por cima ou por tras dos outros, use z-index.</p>
+                <div id="um">um</div>
+                <div id="dois">dois</div>
+                <div id="tres">três</div>
+            </div>
+            <br><br>
+            <div class="fixed">
+                <h3>fixed</h3>
+                <p>A position fixed serve para fixar um elemento idependente da rolagem da tela.</p>
+            </div>
+            <br><br>
+            <div class="container">
+                <p><b>Absolute:</b> Um elemento com position: absolute é retirado do fluxo normal do documento e posicionado em relação ao seu contêiner posicionado mais próximo (um ancestral que tenha position definida como relative, absolute, fixed ou sticky). Se não houver nenhum, o elemento será posicionado em relação ao html.
+                Deslocamento: As propriedades top, right, bottom e left movem o elemento em relação ao contêiner posicionado.
+                Uso comum: É útil para colocar elementos em posições específicas na página, sem interferir no layout dos outros elementos.
+            </p>
+            <div class="absolute">
+                <p>absolute</p>
+            </div>
+            </div>
+            <br><br>
+        </li>
+    </ul>
+    
+</body>
+</html>

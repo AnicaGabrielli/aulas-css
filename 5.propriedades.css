@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Grey+Qo&family=Kalnia+Glaze:wght@100..700&display=swap');
+body{
+  /*font-family: "Kalnia Glaze", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;*/
+  background: none;
+  background-color: rgb(175, 193, 225);
+  
+}
+h1{
+    text-align: center;
+}
+.exemplo{
+    height: 300px;
+    width: 100%;
+    background-color: rgb(223, 237, 233);
+    text-align: center;
+    background:url('exemplo.jpg') ;
+    /*contain repete a imagem quando não preencher; para não repetir o fundo, use background-repeat:no-repeat;Pode se escolher o sentido da repetição x ou y;*/
+    background-size: cover;/* Para definir a posição da imagem quando se utiliza cover é precisso usar o backgroud-position:;*/
+    /* short hand: background:url('exemplo.jpg') no-repeat center;*/
+}
+.bordas{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border: 1px solid brown;
+    border-radius: 30%;
+}
+.dotted{
+    border: 2px dotted darkolivegreen;
+    width: 10%;
+}
+.dashed{
+    border: 2px dashed rgb(107, 47, 91);
+    width: 10%;
+}
+.double{
+    border: 2px double rgb(47, 107, 79);
+    width: 10%;
+}
+.groove{
+    border: 2px groove rgb(199, 53, 143);
+    width: 10%;
+} 
+.ridge{
+    border: 2px ridge rgb(184, 52, 43);
+    width: 10%;
+}
+.inset{
+    border: 2px inset rgb(51, 3, 60);
+    width: 10%;
+} 
+.outset{
+    border: 2px outset rgb(176, 0, 41);
+    width: 10%;
+}
+.none{
+    border: none;
+    width: 10%;
+}
+.hidden{
+    border: 2px hidden darkolivegreen;
+    width: 10%;
+}
+.margin-pai{
+    width: 100%;
+    border: groove red 4px;
+}
+.margin-filho{
+    border: dashed 4px mediumvioletred;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    margin-right: 20px;
+    /*short-hand: margin: 20px 30px 40px 50px;*/
+}
+.sem-padding, .com-padding{
+    border: outset 5px blue; 
+}
+.com-padding{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+/*calsse ou id ou qualquer propriedade:hover{} serve para adicionar propriedades quando o mause estiver por cima;*/
