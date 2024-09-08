@@ -1,21 +1,30 @@
+*{
+    box-sizing: border-box;
+}
 .flexbox-pai{
+height: 700px;
 background-color: darkred;
 display: flex;  /* display flexivel */
 flex-direction: row ; /* direção dos elementos; podem ser em colunas ou linhas. o padrão fle é row*/
 flex-wrap: wrap ; /*comportamento dos elementos a depender do tamanho da div pai; shothand do flex-direction e flex-wrap (flex-flow: row wrap)*/
 justify-content: space-evenly; /*alinhamento horizontal*/
 align-items: flex-start; /*alinhamento horizontal*/
-
+align-content: start;/*Atua no eixo transversal (o eixo oposto ao principal, por exemplo, verticalmente em um container com flex-direction: row). bloco todo*/
 }
+
 @media screen and (max-width: 600px){
     .flexbox-pai{
         flex-direction: column-reverse;
     }
 }
 .flexbox-pai div{
+    flex-grow: 1; /*define o crescimento do item em relação a tela de forma automatizada.*/
     background-color: gold;
     border: darkorange double 5px;
-    margin: 20px;
+    margin: 10px;
     padding: 30px;
     text-align: center;
+}
+.flex{
+    flex:15%;/*define o tamanho em específico do elemento*/
 }
